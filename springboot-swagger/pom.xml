@@ -94,9 +94,9 @@
 				<groupId>com.spotify</groupId>
 				<artifactId>docker-maven-plugin</artifactId>
 				<version>0.2.3</version>
-				<configuration>
+				<configuration>				
 				    <imageName>${docker.image.prefix}</imageName>				    
-					<dockerDirectory>docker</dockerDirectory>
+					<dockerDirectory>/tmp</dockerDirectory>
 					<repository>${docker.image.prefix}/${project.artifactId}</repository>
 					<buildArgs>
 						<JAR_FILE>target/${project.build.finalName}.jar</JAR_FILE>
