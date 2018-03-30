@@ -96,10 +96,10 @@
 				<version>0.2.3</version>
 				<configuration>				
 				    <imageName>${docker.image.prefix}</imageName>				    
-					<dockerDirectory>./</dockerDirectory>
+					<dockerDirectory>./target</dockerDirectory>
 					<repository>${docker.image.prefix}/${project.artifactId}</repository>
 					<buildArgs>
-						<JAR_FILE>target/${project.build.finalName}.jar</JAR_FILE>
+						<JAR_FILE>${project.build.finalName}.jar</JAR_FILE>
 					</buildArgs>
 				</configuration>
 			</plugin>
