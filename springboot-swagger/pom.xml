@@ -96,7 +96,7 @@
 				<version>0.2.3</version>
 				<configuration>				
 				    <imageName>${docker.image.prefix}</imageName>				    
-					<dockerDirectory>/tmp</dockerDirectory>
+					<dockerDirectory>./</dockerDirectory>
 					<repository>${docker.image.prefix}/${project.artifactId}</repository>
 					<buildArgs>
 						<JAR_FILE>target/${project.build.finalName}.jar</JAR_FILE>
