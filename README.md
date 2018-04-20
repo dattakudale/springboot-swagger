@@ -16,13 +16,13 @@ docker run swagger-service:v1
 ## Run with Kubernetes  using google cloud and use your porject.
 
 
-docker tag zuul-proxy:v1 gcr.io/appsutility-141503/swagger-service:v1
+docker tag swagger-service:v1 gcr.io/appsutility-141503/swagger-service:v1
 
 gcloud docker -- push gcr.io/appsutility-141503/swagger-service:v1
 
 ## If you want run and validate
 
-kubectl run zuul-proxy --image=gcr.io/appsutility-141503/swagger-service:v1
+kubectl run swagger-service --image=gcr.io/appsutility-141503/swagger-service:v1
 
 
 ## Deploy spring boot using Kubernetes deployment file
