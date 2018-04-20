@@ -1,8 +1,10 @@
 # springboot-swagger
 springboot swagger example
 
-#Build image
+# Build image
+
 docker build -t springboot-swagger:latest --build-arg  JAR_FILE=./target/springboot-swagger-1.0.0.jar  .
 
-#Run image
+# Run image
+
 docker run -t springboot-swagger
