@@ -3,10 +3,6 @@ server:
 
   context-path: /swagger
 
-spring:
-  application:
-    name: swagger
-
 management:
   security:
     enabled: false
