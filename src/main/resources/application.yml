@@ -35,4 +35,5 @@ eureka:
     serviceUrl:
       defaultZone: ${EUREKA_URI}/eureka 
       
-  instance.prefer-ip-address: true   
+  instance: 
+    preferIpAddress: true  
