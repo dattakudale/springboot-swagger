@@ -8,13 +8,17 @@ import org.springframework.web.bind.annotation.RestController;
 
 import io.swagger.annotations.Api;
 
-
 @Api
 @RestController
 @RequestMapping("/hello")
 public class HelloController {
 
-	
+	@RequestMapping(value = "hello", method = RequestMethod.GET)
+	public @ResponseBody String hello() {
+
+		return "Hello method from Swagger";
+	}
+
 	@RequestMapping(value = "sayHello", method = RequestMethod.GET)
 	public @ResponseBody String sayHello(@RequestParam("user") String user) {
 

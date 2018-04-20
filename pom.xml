@@ -6,7 +6,7 @@
 	<groupId>com.dk.demo</groupId>
 	<artifactId>springboot-swagger</artifactId>
 	<packaging>jar</packaging>
-	<version>1.0.0</version>
+	<version>1.0</version>
 	
 	<name>springboot-swagger</name>
 	<description>Demo project for Spring Boot</description>
